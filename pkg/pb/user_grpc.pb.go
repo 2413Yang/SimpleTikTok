@@ -37,7 +37,7 @@ const (
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type UserServiceClient interface {
 	GetUserInfo(ctx context.Context, in *GetUserInfoRequest, opts ...grpc.CallOption) (*GetUserInfoResponse, error)
-	GetUserInfoDict(ctx context.Context, in *GetUserInfoDictRequest, opts ...grpc.CallOption) (*GetUserInfoDictResopnse, error)
+	GetUserInfoDict(ctx context.Context, in *GetUserInfoDictRequest, opts ...grpc.CallOption) (*GetUserInfoDictResponse, error)
 	CheckPassWord(ctx context.Context, in *CheckPassWordRequest, opts ...grpc.CallOption) (*CheckPassWordResponse, error)
 	Register(ctx context.Context, in *RegisterRequest, opts ...grpc.CallOption) (*RegisterResponse, error)
 	GetUserInfoList(ctx context.Context, in *GetUserInfoListRequest, opts ...grpc.CallOption) (*GetUserInfoListResponse, error)
@@ -66,8 +66,8 @@ func (c *userServiceClient) GetUserInfo(ctx context.Context, in *GetUserInfoRequ
 	return out, nil
 }
 
-func (c *userServiceClient) GetUserInfoDict(ctx context.Context, in *GetUserInfoDictRequest, opts ...grpc.CallOption) (*GetUserInfoDictResopnse, error) {
-	out := new(GetUserInfoDictResopnse)
+func (c *userServiceClient) GetUserInfoDict(ctx context.Context, in *GetUserInfoDictRequest, opts ...grpc.CallOption) (*GetUserInfoDictResponse, error) {
+	out := new(GetUserInfoDictResponse)
 	err := c.cc.Invoke(ctx, UserService_GetUserInfoDict_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -161,7 +161,7 @@ func (c *userServiceClient) UpdateUserFollowerCount(ctx context.Context, in *Upd
 // for forward compatibility
 type UserServiceServer interface {
 	GetUserInfo(context.Context, *GetUserInfoRequest) (*GetUserInfoResponse, error)
-	GetUserInfoDict(context.Context, *GetUserInfoDictRequest) (*GetUserInfoDictResopnse, error)
+	GetUserInfoDict(context.Context, *GetUserInfoDictRequest) (*GetUserInfoDictResponse, error)
 	CheckPassWord(context.Context, *CheckPassWordRequest) (*CheckPassWordResponse, error)
 	Register(context.Context, *RegisterRequest) (*RegisterResponse, error)
 	GetUserInfoList(context.Context, *GetUserInfoListRequest) (*GetUserInfoListResponse, error)
@@ -181,7 +181,7 @@ type UnimplementedUserServiceServer struct {
 func (UnimplementedUserServiceServer) GetUserInfo(context.Context, *GetUserInfoRequest) (*GetUserInfoResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetUserInfo not implemented")
 }
-func (UnimplementedUserServiceServer) GetUserInfoDict(context.Context, *GetUserInfoDictRequest) (*GetUserInfoDictResopnse, error) {
+func (UnimplementedUserServiceServer) GetUserInfoDict(context.Context, *GetUserInfoDictRequest) (*GetUserInfoDictResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetUserInfoDict not implemented")
 }
 func (UnimplementedUserServiceServer) CheckPassWord(context.Context, *CheckPassWordRequest) (*CheckPassWordResponse, error) {

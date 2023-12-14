@@ -163,7 +163,7 @@ func (x *GetUserInfoDictRequest) GetUserIdList() []int64 {
 	return nil
 }
 
-type GetUserInfoDictResopnse struct {
+type GetUserInfoDictResponse struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -171,8 +171,8 @@ type GetUserInfoDictResopnse struct {
 	UserInfoDict map[int64]*UserInfo `protobuf:"bytes,1,rep,name=user_info_dict,json=userInfoDict,proto3" json:"user_info_dict,omitempty" protobuf_key:"varint,1,opt,name=key,proto3" protobuf_val:"bytes,2,opt,name=value,proto3"`
 }
 
-func (x *GetUserInfoDictResopnse) Reset() {
-	*x = GetUserInfoDictResopnse{}
+func (x *GetUserInfoDictResponse) Reset() {
+	*x = GetUserInfoDictResponse{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_user_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -180,13 +180,13 @@ func (x *GetUserInfoDictResopnse) Reset() {
 	}
 }
 
-func (x *GetUserInfoDictResopnse) String() string {
+func (x *GetUserInfoDictResponse) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*GetUserInfoDictResopnse) ProtoMessage() {}
+func (*GetUserInfoDictResponse) ProtoMessage() {}
 
-func (x *GetUserInfoDictResopnse) ProtoReflect() protoreflect.Message {
+func (x *GetUserInfoDictResponse) ProtoReflect() protoreflect.Message {
 	mi := &file_user_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -198,12 +198,12 @@ func (x *GetUserInfoDictResopnse) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use GetUserInfoDictResopnse.ProtoReflect.Descriptor instead.
-func (*GetUserInfoDictResopnse) Descriptor() ([]byte, []int) {
+// Deprecated: Use GetUserInfoDictResponse.ProtoReflect.Descriptor instead.
+func (*GetUserInfoDictResponse) Descriptor() ([]byte, []int) {
 	return file_user_proto_rawDescGZIP(), []int{3}
 }
 
-func (x *GetUserInfoDictResopnse) GetUserInfoDict() map[int64]*UserInfo {
+func (x *GetUserInfoDictResponse) GetUserInfoDict() map[int64]*UserInfo {
 	if x != nil {
 		return x.UserInfoDict
 	}
@@ -1281,10 +1281,10 @@ var file_user_proto_rawDesc = []byte{
 	0x72, 0x5f, 0x69, 0x64, 0x5f, 0x6c, 0x69, 0x73, 0x74, 0x18, 0x01, 0x20, 0x03, 0x28, 0x03, 0x52,
 	0x0a, 0x75, 0x73, 0x65, 0x72, 0x49, 0x64, 0x4c, 0x69, 0x73, 0x74, 0x22, 0xb7, 0x01, 0x0a, 0x17,
 	0x47, 0x65, 0x74, 0x55, 0x73, 0x65, 0x72, 0x49, 0x6e, 0x66, 0x6f, 0x44, 0x69, 0x63, 0x74, 0x52,
-	0x65, 0x73, 0x6f, 0x70, 0x6e, 0x73, 0x65, 0x12, 0x50, 0x0a, 0x0e, 0x75, 0x73, 0x65, 0x72, 0x5f,
+	0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x50, 0x0a, 0x0e, 0x75, 0x73, 0x65, 0x72, 0x5f,
 	0x69, 0x6e, 0x66, 0x6f, 0x5f, 0x64, 0x69, 0x63, 0x74, 0x18, 0x01, 0x20, 0x03, 0x28, 0x0b, 0x32,
 	0x2a, 0x2e, 0x47, 0x65, 0x74, 0x55, 0x73, 0x65, 0x72, 0x49, 0x6e, 0x66, 0x6f, 0x44, 0x69, 0x63,
-	0x74, 0x52, 0x65, 0x73, 0x6f, 0x70, 0x6e, 0x73, 0x65, 0x2e, 0x55, 0x73, 0x65, 0x72, 0x49, 0x6e,
+	0x74, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x2e, 0x55, 0x73, 0x65, 0x72, 0x49, 0x6e,
 	0x66, 0x6f, 0x44, 0x69, 0x63, 0x74, 0x45, 0x6e, 0x74, 0x72, 0x79, 0x52, 0x0c, 0x75, 0x73, 0x65,
 	0x72, 0x49, 0x6e, 0x66, 0x6f, 0x44, 0x69, 0x63, 0x74, 0x1a, 0x4a, 0x0a, 0x11, 0x55, 0x73, 0x65,
 	0x72, 0x49, 0x6e, 0x66, 0x6f, 0x44, 0x69, 0x63, 0x74, 0x45, 0x6e, 0x74, 0x72, 0x79, 0x12, 0x10,
@@ -1405,7 +1405,7 @@ var file_user_proto_rawDesc = []byte{
 	0x63, 0x74, 0x12, 0x17, 0x2e, 0x47, 0x65, 0x74, 0x55, 0x73, 0x65, 0x72, 0x49, 0x6e, 0x66, 0x6f,
 	0x44, 0x69, 0x63, 0x74, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x18, 0x2e, 0x47, 0x65,
 	0x74, 0x55, 0x73, 0x65, 0x72, 0x49, 0x6e, 0x66, 0x6f, 0x44, 0x69, 0x63, 0x74, 0x52, 0x65, 0x73,
-	0x6f, 0x70, 0x6e, 0x73, 0x65, 0x12, 0x3e, 0x0a, 0x0d, 0x43, 0x68, 0x65, 0x63, 0x6b, 0x50, 0x61,
+	0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x3e, 0x0a, 0x0d, 0x43, 0x68, 0x65, 0x63, 0x6b, 0x50, 0x61,
 	0x73, 0x73, 0x57, 0x6f, 0x72, 0x64, 0x12, 0x15, 0x2e, 0x43, 0x68, 0x65, 0x63, 0x6b, 0x50, 0x61,
 	0x73, 0x73, 0x57, 0x6f, 0x72, 0x64, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x16, 0x2e,
 	0x43, 0x68, 0x65, 0x63, 0x6b, 0x50, 0x61, 0x73, 0x73, 0x57, 0x6f, 0x72, 0x64, 0x52, 0x65, 0x73,
@@ -1467,7 +1467,7 @@ var file_user_proto_goTypes = []interface{}{
 	(*GetUserInfoRequest)(nil),          // 0: GetUserInfoRequest
 	(*GetUserInfoResponse)(nil),         // 1: GetUserInfoResponse
 	(*GetUserInfoDictRequest)(nil),      // 2: GetUserInfoDictRequest
-	(*GetUserInfoDictResopnse)(nil),     // 3: GetUserInfoDictResopnse
+	(*GetUserInfoDictResponse)(nil),     // 3: GetUserInfoDictResponse
 	(*CheckPassWordRequest)(nil),        // 4: CheckPassWordRequest
 	(*CheckPassWordResponse)(nil),       // 5: CheckPassWordResponse
 	(*RegisterRequest)(nil),             // 6: RegisterRequest
@@ -1487,19 +1487,19 @@ var file_user_proto_goTypes = []interface{}{
 	(*UpdateUserFollowerCountReq)(nil),  // 20: UpdateUserFollowerCountReq
 	(*UpdateUserFollowerCountRsp)(nil),  // 21: UpdateUserFollowerCountRsp
 	(*UserInfo)(nil),                    // 22: UserInfo
-	nil,                                 // 23: GetUserInfoDictResopnse.UserInfoDictEntry
+	nil,                                 // 23: GetUserInfoDictResponse.UserInfoDictEntry
 	(*CommonResponse)(nil),              // 24: CommonResponse
 }
 var file_user_proto_depIdxs = []int32{
 	22, // 0: GetUserInfoResponse.user_info:type_name -> UserInfo
-	23, // 1: GetUserInfoDictResopnse.user_info_dict:type_name -> GetUserInfoDictResopnse.UserInfoDictEntry
+	23, // 1: GetUserInfoDictResponse.user_info_dict:type_name -> GetUserInfoDictResponse.UserInfoDictEntry
 	22, // 2: GetUserInfoListResponse.user_info_list:type_name -> UserInfo
 	24, // 3: CacheChangeUserCountRsp.common_rsp:type_name -> CommonResponse
 	24, // 4: UpdateUserFavoritedCountRsp.common_rsp:type_name -> CommonResponse
 	24, // 5: UpdateUserFavoriteCountRsp.common_rsp:type_name -> CommonResponse
 	24, // 6: UpdateUserFollowCountRsp.common_rsp:type_name -> CommonResponse
 	24, // 7: UpdateUserFollowerCountRsp.common_rsp:type_name -> CommonResponse
-	22, // 8: GetUserInfoDictResopnse.UserInfoDictEntry.value:type_name -> UserInfo
+	22, // 8: GetUserInfoDictResponse.UserInfoDictEntry.value:type_name -> UserInfo
 	0,  // 9: UserService.GetUserInfo:input_type -> GetUserInfoRequest
 	2,  // 10: UserService.GetUserInfoDict:input_type -> GetUserInfoDictRequest
 	4,  // 11: UserService.CheckPassWord:input_type -> CheckPassWordRequest
@@ -1512,7 +1512,7 @@ var file_user_proto_depIdxs = []int32{
 	18, // 18: UserService.UpdateUserFollowCount:input_type -> UpdateUserFollowCountReq
 	20, // 19: UserService.UpdateUserFollowerCount:input_type -> UpdateUserFollowerCountReq
 	1,  // 20: UserService.GetUserInfo:output_type -> GetUserInfoResponse
-	3,  // 21: UserService.GetUserInfoDict:output_type -> GetUserInfoDictResopnse
+	3,  // 21: UserService.GetUserInfoDict:output_type -> GetUserInfoDictResponse
 	5,  // 22: UserService.CheckPassWord:output_type -> CheckPassWordResponse
 	7,  // 23: UserService.Register:output_type -> RegisterResponse
 	9,  // 24: UserService.GetUserInfoList:output_type -> GetUserInfoListResponse
@@ -1573,7 +1573,7 @@ func file_user_proto_init() {
 			}
 		}
 		file_user_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetUserInfoDictResopnse); i {
+			switch v := v.(*GetUserInfoDictResponse); i {
 			case 0:
 				return &v.state
 			case 1:
