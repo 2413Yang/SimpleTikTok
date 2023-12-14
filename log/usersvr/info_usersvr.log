@@ -1,0 +1,21 @@
+2023-12-08T20:32:25.629+0800	[35mDEBUG[0m	usersvr/main.go:14	this is test
+2023-12-08T20:38:28.525+0800	[35mDEBUG[0m	usersvr/main.go:14	this is test
+2023-12-08T20:38:28.531+0800	[34mINFO[0m	usersvr/main.go:15	info1%!(EXTRA string=this is a info test)
+2023-12-08T21:19:51.338+0800	[35mDEBUG[0m	usersvr/main.go:15	this is test
+2023-12-08T21:19:51.343+0800	[34mINFO[0m	usersvr/main.go:16	info1%!(EXTRA string=this is a info test)
+2023-12-08T21:19:51.344+0800	[34mINFO[0m	db/db.go:24	mdb addr:root:123456@(43.139.192.217:8086)/camps_tiktok?charset=utf8&parseTime=True&loc=Local
+2023-12-08T21:21:15.029+0800	[35mDEBUG[0m	usersvr/main.go:15	this is test
+2023-12-08T21:21:15.034+0800	[34mINFO[0m	usersvr/main.go:16	info1this is a info test
+2023-12-08T21:21:15.034+0800	[34mINFO[0m	db/db.go:24	mdb addr:root:123456@(43.139.192.217:8086)/camps_tiktok?charset=utf8&parseTime=True&loc=Local
+2023-12-08T21:21:35.866+0800	[35mDEBUG[0m	usersvr/main.go:15	this is test
+2023-12-08T21:21:35.871+0800	[34mINFO[0m	usersvr/main.go:16	info1%!(EXTRA string=this is a info test)
+2023-12-08T21:21:35.871+0800	[34mINFO[0m	db/db.go:24	mdb addr:root:123456@(43.139.192.217:8086)/camps_tiktok?charset=utf8&parseTime=True&loc=Local
+2023-12-08T21:24:34.752+0800	[35mDEBUG[0m	usersvr/main.go:15	this is test
+2023-12-08T21:24:34.758+0800	[34mINFO[0m	usersvr/main.go:16	this is a info test
+2023-12-08T21:24:34.758+0800	[34mINFO[0m	db/db.go:24	mdb addr:root:123456@(192.168.1.27:8087)/camps_tiktok?charset=utf8&parseTime=True&loc=Local
+2023-12-08T21:25:06.482+0800	[35mDEBUG[0m	usersvr/main.go:15	this is test
+2023-12-08T21:25:06.488+0800	[34mINFO[0m	usersvr/main.go:16	this is a info test
+2023-12-08T21:25:06.488+0800	[34mINFO[0m	db/db.go:24	mdb addr:root:123456@(192.168.1.27:8087)/camps_tiktok?charset=utf8&parseTime=True&loc=Local
+2023-12-08T21:25:30.559+0800	[35mDEBUG[0m	usersvr/main.go:15	this is test
+2023-12-08T21:25:30.565+0800	[34mINFO[0m	usersvr/main.go:16	this is a info test
+2023-12-08T21:25:30.565+0800	[34mINFO[0m	db/db.go:24	mdb addr:root:123456@(192.168.1.27:8087)/test?charset=utf8&parseTime=True&loc=Local

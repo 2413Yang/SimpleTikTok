@@ -1,0 +1,9 @@
+2023-12-08T22:37:04.508+0800	[34mINFO[0m	cache/cache_test.go:14	log init success...
+2023-12-08T22:37:04.513+0800	[34mINFO[0m	cache/cache.go:23	redisConfig ======= &{DB:0 Port:6379 PoolSize:0 Host:43.139.192.217 PassWord:Golang12345}
+2023-12-08T22:37:09.518+0800	[34mINFO[0m	cache/cache.go:35	res=======,err======dial tcp 43.139.192.217:6379: i/o timeout
+2023-12-08T22:38:36.333+0800	[34mINFO[0m	cache/cache_test.go:14	log init success...
+2023-12-08T22:38:36.338+0800	[34mINFO[0m	cache/cache.go:23	redisConfig ======= &{DB:0 Port:6379 PoolSize:0 Host:192.168.1.27 PassWord:123456}
+2023-12-08T22:38:44.562+0800	[34mINFO[0m	cache/cache.go:35	res=======,err======dial tcp 192.168.1.27:6379: connectex: No connection could be made because the target machine actively refused it.
+2023-12-08T22:43:47.751+0800	[34mINFO[0m	cache/cache_test.go:14	log init success...
+2023-12-08T22:43:47.757+0800	[34mINFO[0m	cache/cache.go:23	redisConfig ======= &{DB:0 Port:8089 PoolSize:0 Host:192.168.1.27 PassWord:123456}
+2023-12-08T22:43:47.761+0800	[34mINFO[0m	cache/cache.go:35	res=======OK,err======<nil>
