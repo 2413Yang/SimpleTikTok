@@ -20,7 +20,7 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
-type CommonResopnse struct {
+type CommonResponse struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -29,8 +29,8 @@ type CommonResopnse struct {
 	Msg  string `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
 }
 
-func (x *CommonResopnse) Reset() {
-	*x = CommonResopnse{}
+func (x *CommonResponse) Reset() {
+	*x = CommonResponse{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_common_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -38,13 +38,13 @@ func (x *CommonResopnse) Reset() {
 	}
 }
 
-func (x *CommonResopnse) String() string {
+func (x *CommonResponse) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*CommonResopnse) ProtoMessage() {}
+func (*CommonResponse) ProtoMessage() {}
 
-func (x *CommonResopnse) ProtoReflect() protoreflect.Message {
+func (x *CommonResponse) ProtoReflect() protoreflect.Message {
 	mi := &file_common_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -56,19 +56,19 @@ func (x *CommonResopnse) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use CommonResopnse.ProtoReflect.Descriptor instead.
-func (*CommonResopnse) Descriptor() ([]byte, []int) {
+// Deprecated: Use CommonResponse.ProtoReflect.Descriptor instead.
+func (*CommonResponse) Descriptor() ([]byte, []int) {
 	return file_common_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *CommonResopnse) GetCode() int64 {
+func (x *CommonResponse) GetCode() int64 {
 	if x != nil {
 		return x.Code
 	}
 	return 0
 }
 
-func (x *CommonResopnse) GetMsg() string {
+func (x *CommonResponse) GetMsg() string {
 	if x != nil {
 		return x.Msg
 	}
@@ -79,7 +79,7 @@ var File_common_proto protoreflect.FileDescriptor
 
 var file_common_proto_rawDesc = []byte{
 	0x0a, 0x0c, 0x63, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x22, 0x36,
-	0x0a, 0x0e, 0x43, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x52, 0x65, 0x73, 0x6f, 0x70, 0x6e, 0x73, 0x65,
+	0x0a, 0x0e, 0x43, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
 	0x12, 0x12, 0x0a, 0x04, 0x63, 0x6f, 0x64, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x03, 0x52, 0x04,
 	0x63, 0x6f, 0x64, 0x65, 0x12, 0x10, 0x0a, 0x03, 0x6d, 0x73, 0x67, 0x18, 0x02, 0x20, 0x01, 0x28,
 	0x09, 0x52, 0x03, 0x6d, 0x73, 0x67, 0x42, 0x0a, 0x5a, 0x08, 0x2e, 0x2e, 0x2f, 0x70, 0x62, 0x3b,
@@ -100,7 +100,7 @@ func file_common_proto_rawDescGZIP() []byte {
 
 var file_common_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_common_proto_goTypes = []interface{}{
-	(*CommonResopnse)(nil), // 0: CommonResopnse
+	(*CommonResponse)(nil), // 0: CommonResponse
 }
 var file_common_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
@@ -117,7 +117,7 @@ func file_common_proto_init() {
 	}
 	if !protoimpl.UnsafeEnabled {
 		file_common_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*CommonResopnse); i {
+			switch v := v.(*CommonResponse); i {
 			case 0:
 				return &v.state
 			case 1:
