@@ -1,6 +1,6 @@
 svr_config:
   name: "usersvr"
-  host: "43.139.192.217"
+  host: "192.168.1.27"
   port: 8000
 
 redis:
@@ -48,7 +48,7 @@ log:
     max_backups: 7
 
 consul:
-    host: "43.139.192.217"
+    host: "192.168.1.27"
     port: 8500
     tags:
       - "usersvr"

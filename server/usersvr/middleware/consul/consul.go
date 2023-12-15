@@ -16,12 +16,12 @@ type RegistryClient interface {
 	DeRegister(serviceId string) error
 }
 
-//func NewRegistryClient(host string, port int) RegistryClient {
-//	return &Registry{
-//		Host: host,
-//		Port: port,
-//	}
-//}
+func NewRegistryClient(host string, port int) RegistryClient {
+	return &Registry{
+		Host: host,
+		Port: port,
+	}
+}
 
 // 注册方法
 func (r *Registry) Register(address string, port int, name string, tags []string, id string) error {
